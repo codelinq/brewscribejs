@@ -9,8 +9,8 @@ describe('document_parser', function(){
 		var parser = new DocumentParser();
 		
 		parser.on('node', function(node){
-			if (node && node.recipe && node.recipe.name == 'Spring Equinox IPA'){
-				console.log(node.recipe);
+			if (node && node.recipe){
+				console.log(node.recipe.name);
 			}
 				
 		});
