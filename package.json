@@ -4,7 +4,7 @@
   "description": "Brewscribejs is a Beersmith2 (.bsmx) file parser for node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/codelinq/brewscribejs/issues"
   },
-  "homepage": "https://github.com/codelinq/brewscribejs"
+  "homepage": "https://github.com/codelinq/brewscribejs",
+  "dependencies": {
+    "xml-nodes": "^0.1.4",
+    "xml2js": "^0.4.8"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^6.0.1"
+  }
 }
