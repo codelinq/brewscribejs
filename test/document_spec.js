@@ -5,16 +5,19 @@ describe('document_parser', function(){
 	it('should spit out lines', function(done){
 		this.timeout(7000);
 		var parser = new DocumentParser();
+		var nodes = [];
 		
 		parser.on('node', function(node){
-			if (node && node.recipe){
-				console.log(node.recipe.name);
-			}
-				
+			nodes.push(node);	
 		});
+		
 		parser.on('end', function(){
+			nodes.forEach(function(node){
+				console.log(node.recipe.name);
+			});
 			done();
 		});
+		
 		parser.parse(__dirname + '/brewlog.bsmx', 'Recipe');
 	});
 });
