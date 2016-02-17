@@ -1,6 +1,6 @@
 {
   "name": "brewscribe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Brewscribejs is a Beersmith2 (.bsmx) file parser for node.js",
   "main": "index.js",
   "scripts": {
